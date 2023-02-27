@@ -34,7 +34,6 @@ const questions = [
         type:'input',
         name:'license',
         message: 'Which license does your Project use?',
-        licenses: ["MIT", "APACHE 2.0", "GPL", "NONE"]
     },
 
     {
@@ -74,7 +73,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions).then((response) => {
         console.log('Generating README');
-        writeToFile('README1.md', generateMarkdown({...response}))
+        writeToFile('README.md', generateMarkdown({...response}))
     })
 }
 
