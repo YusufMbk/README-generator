@@ -3,7 +3,7 @@
 
   ### Description
 
-  This is a README generator built with node.js
+  The goa of this project was to build a README generator with node.js
 
   ### Table of Contents
 
